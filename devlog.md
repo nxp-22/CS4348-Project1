@@ -56,6 +56,18 @@ I tested the Driver with the password HELLO and confirmed that encryption return
 - worked on the  driver.java file
 - test the file using the word HELLO
 
+# 2026-10-17 21:21
+
+## Thoughts So Far
+I updated Driver.java. I added an interactive menu for password, encrypt, decrypt, history, and quit using an ArrayList to store the strings and encryption/decryption results so they can be reused later.
+I also added options for selecting strings from history and entering new text. 
+
+## Plan for This Session
+- updaed the  driver.java file
+- test the file using the command words
+
+
+
 
 
 

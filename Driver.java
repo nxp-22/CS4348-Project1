@@ -1,5 +1,8 @@
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Driver {
 
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -22,23 +25,30 @@ public class Driver {
         BufferedReader fromEnc = new BufferedReader(
             new InputStreamReader(encProc.getInputStream()));
 
+        // reads input from the user
+        Scanner input = new Scanner(System.in);
+
+        // stores prev messages 
+        ArrayList<String> history = new ArrayList<>();
+
         // log when the driver starts
         toLog.println("START Driver started.");
 
-        // sends the password to  encryption program
-        toEnc.println("PASS HELLO");
-        String passReply = fromEnc.readLine();
+        
+        // shows the menu until user quits
+        while (true) {
+            System.out.println("\nCommands: password, encrypt, decrypt, history, quit");
+            System.out.print("Enter command: ");
+            if (!input.hasNextLine()) {
+                break;
+            }
+            String cmd = input.nextLine().trim().toLowerCase();
+            if (cmd.equals("quit")) {
+                break;
+            }
+            System.out.println("Command selected: " + cmd);
+        }
 
-        System.out.println("Password response: " + passReply);
-        toLog.println("COMMAND Password set");
-        toLog.println("RESPONSE " + passReply);
-
-        toEnc.println("ENCRYPT HELLO");
-        String encReply = fromEnc.readLine();
-
-        System.out.println("Encryption response: " + encReply);
-        toLog.println("COMMAND ENCRYPT");
-        toLog.println("RESPONSE " + encReply);
 
         // tells processes to stop
         toEnc.println("QUIT");
