@@ -66,6 +66,17 @@ I also added options for selecting strings from history and entering new text.
 - updaed the  driver.java file
 - test the file using the command words
 
+# 2026-10-17 22:07
+
+## Thoughts So Far
+In this session i improved the logging and error handling in Driver.java and Logger.java. I added error messages for when the encryption process stops unexpectedly and made the Logger skip empty messages. During testing I selected HELLO from history and got AAAAA instead of HELLO. I realized I had selected the wrong history entry. After choosing OIWWC the program correctly decrypted it back to HELLO.
+
+## Plan for This Session
+- imporve the logging and error handling
+
+
+
+
 
 
 

@@ -66,6 +66,8 @@ public class Driver {
 
                 if (passReply == null) {
                     System.out.println("ERROR Encryption process stopped");
+                    toLog.println("COMMAND PASSWORD");
+                    toLog.println("RESPONSE ERROR Encryption process stopped");
                     break;
                 }
 
@@ -90,6 +92,8 @@ public class Driver {
 
                 if (reply == null) {
                     System.out.println("ERROR Encryption process stopped");
+                    toLog.println("COMMAND " + cmd.toUpperCase());
+                    toLog.println("RESPONSE ERROR Encryption process stopped");
                     break;
                 }
 
