@@ -34,5 +34,18 @@ I  tested this program as well. I learned that FileWriter with true adds new mes
 - work on the Encryption.java file
 - test the file
 
+# 2026-10-17 20:40
+
+## Thoughts So Far
+I added the DECRYPT command to Encryption.java. It uses the same idea but subtracts the key values instead of adding them.
+
+I tested it using OIWWC with the password HELLO and successfully got HELLO back. Next, I plan to work on Driver.java to connect the programs using processes and pipes.
+
+## Plan for This Session
+- add a command to the Encryption.java file
+- test the new command
+
+
+
 
 
