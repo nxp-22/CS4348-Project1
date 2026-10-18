@@ -45,6 +45,19 @@ I tested it using OIWWC with the password HELLO and successfully got HELLO back.
 - add a command to the Encryption.java file
 - test the new command
 
+# 2026-10-17 21:01
+
+## Thoughts So Far
+I worked on Driver.java. I also used ProcessBuilder to start Logger and Encryption as separate processes. I used PrintWriter to send commands and BufferedReader to receive responses through pipes.
+
+I tested the Driver with the password HELLO and confirmed that encryption returned OIWWC and checked the activity.log and verified that the Logger.
+
+## Plan for This Session
+- worked on the  driver.java file
+- test the file using the word HELLO
+
+
+
 
 
 
