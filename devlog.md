@@ -23,3 +23,16 @@ I also tested this program, during which I noticed extra lines in my log file fr
 - test the file
 
 
+# 2026-10-17 20:00
+
+## Thoughts So Far
+I worked on Encryption.java and implemented the PASS and ENCRYPT commands. I used  Vigenère cipher to encrypt messages. I also added error handling when no password is set or when invalid characters are entered.
+
+I  tested this program as well. I learned that FileWriter with true adds new messages instead of overwriting the file. 
+
+## Plan for This Session
+- work on the Encryption.java file
+- test the file
+
+
+
