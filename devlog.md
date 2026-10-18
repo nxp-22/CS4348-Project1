@@ -1,8 +1,3 @@
-2026-03-12 16:36
-
-I started by reviewing the project requirements. The program needs three separate processes: a driver, an encryption program, and a logger. The driver will communicate with the other two programs through pipes.
-
-My first goal is to organize the project files and implement the logger. I want to start with the logger because its job is straightforward: receive messages and write them to a file with timestamps.
 # 2026-10-16 16:30
 
 ## Thoughts So Far
@@ -15,3 +10,16 @@ I looked over all the project instructions and started to familiarize myself wit
 
 ## Session Reflection
 I created the project repository and the initial files needed for the project.
+
+# 2026-10-17 19:25
+
+## Thoughts So Far
+In this session I worked on Logger.java. This file reads messages from standard input and saves them to a log file with timestamps. I used PrintWriter and BufferedReader and added a loop that stops when QUIT is entered.
+
+I also tested this program, during which I noticed extra lines in my log file from an earlier test. I learned that FileWriter with true adds new messages instead of overwriting the file. The new messages were formatted correctly.
+
+## Plan for This Session
+- work on the logger.java file
+- test the file
+
+
